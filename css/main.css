@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body {
+  font-family: "Droid Arabic Kufi", Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+img {
+  width: 500px;
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+/* Remove Shadows of inputs */
+input {
+  box-shadow: none !important;
+  border: solid #ddd 1px;
+  border-radius: 4px !important;
+}
+select {
+  box-shadow: none !important;
+  border: solid #ddd 1px;
+  border-radius: 4px !important;
+}
+
+.border-top {
+  border-top: solid 5px #333 !important;
+}
+
+/* Request Right */
+.request .right h4 {
+  color: teal;
+}
+
+.request .right .request-btn {
+  background-color: teal !important;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 4px;
+}
+.request .right .request-btn:hover {
+  background-color: rgb(0, 179, 179) !important;
+}
+
+/* Request left */
+.request .left {
+  padding: 50px;
+}
+.request .left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.request .left h4 {
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border-right: solid 4px teal;
+  color: teal;
+}
+.request .left ul li {
+  margin-bottom: 15px;
+}
+.request .left .input-me {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.request .left .btn-me {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Product Page */
+.product {
+  margin: 50px;
+}
+.product .heading {
+  line-height: 1.2;
+}
+.product .heading h3 {
+  color: teal;
+}
+.product .request-btn {
+  background-color: teal !important;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 4px;
+}
+.product .request-btn:hover {
+  background-color: rgb(0, 179, 179) !important;
+}
+.product ul {
+  list-style-type: none;
+}
+.product ul li {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.product ul li ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}

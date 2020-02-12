@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>اطلب الان</title>
+    <style>
+      @media (max-width: 767px) {
+        .left {
+          order: 1;
+          margin-bottom: 150px;
+        }
+        .right {
+          order: 2;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: teal;"
+    >
+      <a class="navbar-brand" href="#"
+        ><i class="fas fa-shopping-cart"></i>عبور ماركت</a
+      >
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    </nav>
+
+    <!-- Request -->
+    <div class="request">
+      <div class="container">
+        <div class="row bg-white mt-5 p-5 border-top shadow-sm">
+          <div class="col-lg-6 col-sm-12 right pl-5">
+            <h4 class="bg-white p-2 shadow-sm mb-5">
+              معلومات الشحن
+            </h4>
+            <!-- اختيار الشحن -->
+            <div class="custom-control custom-radio float-right">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="customControlValidation2"
+                name="radio-stacked"
+                required
+              />
+              <label class="custom-control-label" for="customControlValidation2"
+                >اشحنلي</label
+              >
+            </div>
+            <div class="custom-control custom-radio float-right pr-3">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="customControlValidation3"
+                name="radio-stacked"
+                required
+              />
+              <label class="custom-control-label" for="customControlValidation3"
+                >اشحن لشخص اخر</label
+              >
+              <div class="invalid-feedback">
+                More example invalid feedback text
+              </div>
+            </div>
+            <!-- الكمية -->
+            <div class="form-group" style="margin-top: 100px;">
+              <label for="">الكمية</label>
+              <select class="form-control">
+                <option>1 كيلو</option>
+                <option>2 كيلو</option>
+                <option>3 كيلو</option>
+                <option>4 كيلو</option>
+                <option>5 كيلو</option>
+              </select>
+            </div>
+            <!-- المدينة -->
+            <div class="form-group ">
+              <label for="">المدينة</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>العبور</option>
+                <option>الرحاب</option>
+                <option>الشروق</option>
+                <option>مدينة نصر</option>
+                <option>مدينتي</option>
+                <option>6 اكتوبر</option>
+                <option>الشيخ زايد</option>
+                <option>المقطم</option>
+                <option>المعادي</option>
+                <option>الحلمية</option>
+                <option>عابدين</option>
+              </select>
+            </div>
+            <!-- الحي -->
+            <div class="form-group">
+              <label for="">الحي</label>
+              <input type="text" class="form-control" placeholder="اسم الحي" />
+            </div>
+            <!-- الهاتف -->
+            <div class="form-group">
+              <label for="">رقم الهاتف</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="رقم الهاتف"
+              />
+            </div>
+            <!-- انهاء الطلب -->
+            <div class="form-group">
+              <button class="btn request-btn">اطلب</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 left border bg-light">
+            <h4 class="shadow-sm">ملخص الطلبية</h4>
+            <ul>
+              <li class="p-2 shadow-sm bg-white">
+                <span class="text-danger">1</span> كيلو سمك بلطي:
+                <span class="text-danger">20 جنيه</span>
+              </li>
+            </ul>
+            <div class="form-group">
+              <p class="text-success">كود العرض الترويجي</p>
+              <div style="display: flex;">
+                <input
+                  type="text"
+                  class="form-control input-me"
+                  placeholder="الكود"
+                />
+                <button class="btn btn-success btn-me">تقديم</button>
+              </div>
+            </div>
+            <ul class="mt-4">
+              <li class="bg-white shadow-lg p-3">
+                الاجمالي: <span class="text-danger">20 جنيه</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2020 عبور ماركت</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form-validation.js"></script>
+  </body>
+</html>
